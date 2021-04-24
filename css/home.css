@@ -1,3 +1,363 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: aquamarine;
+  background-color: #edeffe;
+}
+
+header {
+  background-color: #fff;
+}
+header a {
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+header #logo {
+  font-size: 1.5em;
+}
+
+/*
+header nav {
+  padding-left: 60%;
+}
+*/
+header nav li {
+  display: inline-block;
+}
+
+header nav a {
+  transition: background-color 0.4s;
+}
+
+header nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*  Header */
+
+#intro {
+  display: block;
+  background-image: url("/image/garden.jpg");
+  min-height: 80vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.intro-text {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+}
+
+.intro-text h2 {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.intro-text h3 {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.intro-text .call-to-action {
+  padding: 20px;
+}
+.intro-text .call-to-action a {
+  background-color: #55c1bf;
+  color: #fff;
+  padding: 15px;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  transition: box-shadow 0.4s;
+}
+.intro-text .call-to-action a:hover {
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* intro */
+
+#welcome {
+  background-color: #55c1bf;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+#welcome h2 {
+  text-align: center;
+  padding: 15px;
+}
+
+#welcome p {
+  padding: 10px;
+}
+#welcome .services-container {
+  max-width: 90%;
+  margin: 0px auto;
+}
+
+#welcome .work-container {
+  max-width: 90%;
+  margin: 50px auto;
+}
+.service {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.service-title {
+  padding: 15px;
+  border-bottom: 2px solid #fff;
+  font-size: 1.4em;
+}
+
+.work {
+  height: 50vh;
+  margin: 20px 10px;
+  position: relative;
+}
+
+.work-container .one {
+  background-image: url("/image/s1.jpeg");
+  background-size: cover;
+}
+
+.work-container .two {
+  background-image: url("/image/s2.jpeg");
+  background-size: cover;
+}
+
+.work-container .three {
+  background-image: url("/image/s3.jpeg");
+  background-size: cover;
+}
+
+.work-container .four {
+  background-image: url("/image/s4.jpeg");
+  background-size: cover;
+}
+
+.work-title {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+#welcome .services-container .service {
+  width: 60%;
+  margin: auto;
+}
+
+/* Welcome */
+
+#blog {
+  text-align: center;
+}
+
+#blog h2 {
+  padding: 15px;
+}
+#blog .call-to-action {
+  margin: 20px;
+}
+
+#blog .call-to-action a {
+  background-color: #55c1bf;
+  color: #fff;
+  padding: 15px;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  transition: box-shadow 0.4s;
+}
+
+.articals-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.article {
+  margin: 20px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.artical-date {
+  padding: 15px;
+  color: #fff;
+  background-color: #000;
+}
+
+.articals-title {
+  padding: 10px;
+}
+
+.article-text {
+  padding: 0px 15px 10px;
+}
+
+.article-button {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.article-button a {
+  background-color: #55c1bf;
+  color: #fff;
+  padding: 15px;
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  transition: box-shadow 0.4s;
+}
+
+/** Blog **/
+
+#testimonials {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+#testimonials h2 {
+  font-size: 1.5em;
+  padding: 15px;
+}
+
+#testimonials h3 {
+  font-size: 1.4em;
+  padding: 10px 15px;
+}
+
+.testimonial {
+  margin: 20px;
+  padding: 10px;
+}
+
+.testimonial img {
+  height: 150px;
+  width: 150px;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+.testimonial p {
+  padding: 10px 0px;
+}
+
+/** testimonial **/
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding: 30px;
+}
+
+footer .services ul {
+  list-style: none;
+}
+
+footer .services li {
+  padding: 10px 0px;
+}
+
+footer .services h5 {
+  padding: 15px 0px;
+  font-size: 1.2em;
+}
+
+footer .services {
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .contact-info p {
+  padding: 10px 0px;
+}
+
+footer .contact-form input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0px;
+}
+
+footer .contact-form button {
+  background-color: #55c1bf;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px 0px;
+  text-decoration: none;
+  transition: box-shadow 0.4s;
+  border: none;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+/** footer **/
+
+/*  Media queries */
+
+@media screen and (min-width: 750px) {
+  header #logo {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+  }
+  header nav {
+    display: inline-block;
+    width: 60%;
+  }
+
+  .intro-text {
+    top: 80px;
+  }
+
+  .services-container {
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  .work-container .work {
+    display: inline-block;
+    width: 45%;
+  }
+
+  #blog .article,
+  .testimonial {
+    float: left;
+    width: 44%;
+  }
+
+  #blog .articals-container::after,
+  #testimonials .testimonials-container::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer .services,
+  .contact-info {
+    display: inline-block;
+    width: 45%;
+  }
+
+  footer .contact-form input {
+    width: 70%;
+  }
+  footer .contact-form button {
+    margin-left: 30px;
+  }
 }
